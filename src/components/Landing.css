@@ -1,0 +1,45 @@
+.landing {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom, #60a5fa, #1e3a8a); /* light → deep sea */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+/* Logo + name grouped */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Logo circle */
+.logo {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+
+/* Name */
+.project-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+/* Info text */
+.tagline {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
