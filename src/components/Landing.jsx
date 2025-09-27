@@ -12,7 +12,7 @@ function Landing() {
       </div>
        <div className="landing">
       <LeviathanLogo size="lg" animate={true} />
-      <p className="tagline"> Ma ch** denge hackathon ki</p>
+      <p className="tagline"> Maybe add some lines as to how determined we are in finding solutions to problems</p>
     </div>
     </div>
   );
