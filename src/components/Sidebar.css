@@ -1,0 +1,32 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  font-size: 1.3rem;
+  padding: 1rem 0;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.sidebar-item:hover {
+  color: #4ade80; /* green highlight */
+}

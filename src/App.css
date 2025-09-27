@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f8fafc;
+}
+
+.menu-toggle {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1200;
+  color: rgb(84, 66, 66);
+}
+
+.main-content {
+  padding: 6rem 2rem 2rem 2rem;
+  text-align: center;
+}
