@@ -1,0 +1,146 @@
+.problem-page {
+  min-height: 100vh;
+  width: 100%;
+  background: #f8fafc;
+
+  /* Center everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* changed from stretch */
+  padding: 3rem 1rem 5rem;
+
+  box-sizing: border-box;
+}
+
+/* Banner section */
+.problem-banner {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  background: linear-gradient(90deg, #1e3a8a, #3b82f6, #06b6d4);
+  color: white;
+  padding: 3rem 1rem;
+  border-radius: 14px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.problem-banner h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.problem-id {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Main layout */
+.problem-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px;
+  flex-wrap: wrap;
+}
+
+/* Left side (details) */
+.problem-details {
+  flex: 1;
+  min-width: 300px;
+  max-width: 720px;
+}
+
+.problem-section {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 1.8rem 1.5rem;
+  margin-bottom: 1.8rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.problem-section h2 {
+  color: #1e40af;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.problem-section p,
+.problem-section li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #334155;
+}
+
+.problem-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+/* Right side meta info */
+.problem-meta {
+  min-width: 250px;
+  background: #1e293b;
+  color: white;
+  padding: 1.8rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+  align-self: flex-start;
+}
+
+.problem-meta h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #93c5fd;
+}
+
+.meta-item {
+  margin-bottom: 1.2rem;
+}
+
+.meta-item span {
+  display: block;
+  font-weight: 600;
+  color: #bfdbfe;
+  margin-bottom: 0.3rem;
+}
+
+.meta-item p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .problem-page {
+    padding: 2.5rem 1rem 4rem;
+    justify-content: flex-start;
+  }
+
+  .problem-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .problem-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .problem-meta {
+    width: 100%;
+    text-align: center;
+  }
+}

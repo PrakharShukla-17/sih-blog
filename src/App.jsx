@@ -2,11 +2,18 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
+
+
+import Problem from "./components/pages/Problem";
+import OurApproach from "./components/pages/OurApproach";
+import Video from "./components/pages/Video";
+import ContactUs from "./components/pages/ContactUs";
+
 import "./App.css";
 
 function App() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const [activePage, setActivePage] = useState("Home"); 
+  const [activePage, setActivePage] = useState("Home");
 
   const handleSectionSelect = (section) => {
     setActivePage(section);
@@ -23,18 +30,17 @@ function App() {
         ☰
       </button>
 
+      
       <Sidebar isOpen={sidebarOpen} onSelect={handleSectionSelect} />
-      <Header activePage={activePage !== "Home" ? activePage : ""} /> 
+      <Header activePage={activePage !== "Home" ? activePage : ""} />
 
+     
       <div className="main-content">
-        {activePage === "Home" ? (
-          <Landing /> 
-        ) : (
-          <>
-            <h2>{activePage} Content</h2>
-            <p>This is the {activePage} section of the page.</p>
-          </>
-        )}
+        {activePage === "Home" && <Landing />}
+        {activePage === "Problem" && <Problem />}       
+        {activePage === "Our Approach" && <OurApproach />}
+        {activePage === "Video" && <Video />}
+        {activePage === "Contact Us" && <ContactUs />}
       </div>
     </>
   );

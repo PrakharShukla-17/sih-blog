@@ -1,7 +1,7 @@
 import React from "react";
 import "./Landing.css";
 import logo from "../assets/final.png"; 
-
+import LeviathanLogo from "./Logo";
 
 
 function Landing() {
@@ -9,11 +9,11 @@ function Landing() {
     <div className="landing">
       <div className="logo-section">
         <img src={logo} alt="Leviathan Logo" className="logo" />
-        <h1 className="project-name">Leviathan</h1>
       </div>
-      <p className="tagline">
-       Ma ch** denge hackathon ki
-      </p>
+       <div className="landing">
+      <LeviathanLogo size="lg" animate={true} />
+      <p className="tagline"> Ma ch** denge hackathon ki</p>
+    </div>
     </div>
   );
 }

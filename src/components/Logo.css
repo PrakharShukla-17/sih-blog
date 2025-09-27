@@ -1,0 +1,78 @@
+/* Layout */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Base logo text */
+.logo-text {
+  user-select: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  position: relative;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: uppercase;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* Size mappings */
+.logo-sm {
+  font-size: 1.75rem;
+  letter-spacing: 0.3rem;
+}
+
+.logo-md {
+  font-size: 3rem;
+  letter-spacing: 0.15rem;
+}
+
+.logo-lg {
+  font-size: 4.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.logo-xl {
+  font-size: 6rem;
+  letter-spacing: -0.02rem;
+}
+
+/* Gradient fill */
+.logo-gradient {
+  background: linear-gradient(90deg, #7dd3fc, #22d3ee, #14b8a6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* Each letter */
+.logo-letter {
+  display: inline-block;
+  padding: 0 0.1em;
+}
+
+/* Underline */
+.logo-underline {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.underline-svg {
+  width: 80%;
+  height: 20px;
+}
+
+.underline-path {
+  stroke: rgba(56, 189, 248, 0.6);
+}
+
+/* Hover glow effect */
+.logo-text:hover {
+  filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.8));
+}
