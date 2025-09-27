@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import Landing from "./components/Landing";
-
-
+import Footer from "./components/Footer";
 import Problem from "./components/pages/Problem";
 import OurApproach from "./components/pages/OurApproach";
 import Video from "./components/pages/Video";
@@ -42,6 +41,7 @@ function App() {
         {activePage === "Video" && <Video />}
         {activePage === "Contact Us" && <ContactUs />}
       </div>
+      <Footer></Footer>
     </>
   );
 }

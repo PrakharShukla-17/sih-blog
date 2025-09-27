@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import "./Sidebar.css";
 
 function Sidebar({ isOpen, onSelect }) {
-  const sections = ["Home", "Problem", "Our Approach", "Video","Contact Us"];
+  const sections = ["Home", "Problem", "Our Approach", "Video"];
 
   return (
     <motion.div
