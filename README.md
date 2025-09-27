@@ -1,16 +1,57 @@
-# React + Vite
+# 🌊 Leviathan – AI-Powered Smart Internship Allocation System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> A modern web solution that combines **AI** and **Web3** to ensure **fair, transparent, and tamper-proof internship allocations** under the PM Internship Scheme.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Overview
 
-## React Compiler
+The **Leviathan** project addresses one of the biggest challenges in internship programs — *matching thousands of candidates with suitable opportunities efficiently and fairly*.  
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+By integrating **AI/ML algorithms** and **decentralized Web3 infrastructure**, the system ensures that:
+- Students are matched to internships based on verified skills and preferences.  
+- Employers receive the most relevant and unbiased candidate suggestions.  
+- The matching process is **transparent, verifiable, and immutable**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧩 Features
+
+### 🖥️ Frontend
+- Built using **React.js** and **Framer Motion** for smooth animations and interactivity.  
+- Includes a sleek sidebar navigation with animated transitions.  
+- Responsive layout optimized for all devices.  
+
+### ⚙️ Core Pages
+| Page | Description |
+|------|--------------|
+| **Landing Page** | Showcases project logo, name, and tagline with an oceanic theme. |
+| **Problem Statement** | Details the problem, background, and expected solution as per the PM Internship Scheme. |
+| **Our Approach** | Explains the AI + Web3-driven architecture with an integrated flowchart and structured cards. |
+| **Video Page** | Displays a demo video of the working prototype. |
+| **Footer** | Persistent footer on all pages containing contact information and links. |
+
+### 🤖 AI + Web3 Highlights
+- AI-based **resume parsing & matching engine**.  
+- **Decentralized model hosting** on Internet Computer (ICP).  
+- **DAO-based governance** for transparent model updates.  
+- **Blockchain-backed resume verification** using IPFS storage.
+
+---
+
+## 🛠️ Tech Stack
+
+| Component | Technology |
+|------------|-------------|
+| Frontend | React.js (Vite) |
+| Backend | Node.js + Express |
+| Database | MongoDB |
+| AI/ML Engine | Python |
+| Decentralized Hosting | Internet Computer (ICP Canisters) |
+| Blockchain Storage | IPFS / ICP |
+| Governance | DAO-based mechanism |
+
+---
+
+## 🧭 Project Structure
+
