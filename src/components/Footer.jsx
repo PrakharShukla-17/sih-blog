@@ -49,7 +49,7 @@ function Footer() {
           <div className="footer-pills">
             <span className="footer-pill">GitHub · Launching soon</span>
             <span className="footer-pill">LinkedIn · In progress</span>
-            <a className="footer-pill" href="mailto:prakhar.shukla@email.com">
+            <a className="footer-pill" href="mailto:2300520100167@email.com">
               Email dev team
             </a>
           </div>

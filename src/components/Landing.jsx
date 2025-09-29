@@ -1,6 +1,6 @@
 import React from "react";
 import "./Landing.css";
-import logo from "../assets/final.png";
+import logo from "../assets/isitfinal.png";
 import LeviathanLogo from "./Logo";
 
 const stats = [
