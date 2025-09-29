@@ -15,12 +15,12 @@ function Header({ activePage }) {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.45, ease: "easeOut" }}
     >
-      <div className="header-brand">
+      {/* <div className="header-brand">
         <span className="header-dot" aria-hidden="true" />
         <span className="header-brand-name">Leviathan</span>
-      </div>
+      </div> */}
 
-      <div className="header-status">
+      {/* <div className="header-status">
         <span className="header-subtitle">{subtitle}</span>
         <AnimatePresence mode="wait">
           <motion.span
@@ -34,7 +34,7 @@ function Header({ activePage }) {
             {pageTitle}
           </motion.span>
         </AnimatePresence>
-      </div>
+      </div> */}
     </motion.header>
   );
 }
