@@ -6,25 +6,23 @@ import flowchart from "../../assets/flow.png";
 
 function OurApproach() {
   return (
-    <div className="approach-page">
-      
-      <motion.div
-        className="approach-banner"
+    <div className="approach-page page-shell">
+      <motion.section
+        className="approach-banner page-banner"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
-        <h1>⚙️ Crux of Our Solution (MVP Overview)</h1>
+        <h1>Blueprint of the Leviathan Allocation Stack</h1>
         <p>
-          Our solution tackles fair and efficient internship allocation through
-          an AI-powered and Web3-integrated system — ensuring transparency,
-          trust, and verifiability at every stage.
+          From resume ingestion to blockchain notarisation, the Leviathan stack
+          keeps every stakeholder aligned through explainable AI and
+          verifiable workflows.
         </p>
-      </motion.div>
+      </motion.section>
 
-      
       <motion.div
-        className="flowchart-container"
+        className="flowchart-container surface-card"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4, duration: 0.8 }}
@@ -35,81 +33,76 @@ function OurApproach() {
           className="flowchart-img"
         />
         <p className="flowchart-caption">
-          Fig. 1 — Technical Architecture & Workflow for PM Internship Scheme
+          Fig. 1 — AI + Web3 orchestration flow for PM Internship Scheme
         </p>
       </motion.div>
 
-      
       <div className="approach-content">
-        
         <motion.section
-          className="approach-section"
+          className="surface-card approach-section"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.6 }}
         >
-          <h2>🔹 How We Tackle the Problem</h2>
+          <h2>Delivery Pillars</h2>
 
           <div className="info-cards">
-            <div className="card">
-              <h3>Two Interactive Dashboards</h3>
+            <div className="approach-card">
+              <h3>Dual Mission Dashboards</h3>
               <ul>
                 <li>
-                  <strong>Student Dashboard:</strong> Upload resumes and specify
-                  preferences (skills, location, sector).
+                  <strong>Students:</strong> Smart resume uploads, preference
+                  capture, and live application readiness scores.
                 </li>
                 <li>
-                  <strong>Employer Dashboard:</strong> Post internship openings
-                  with qualification and skill requirements.
+                  <strong>Employers:</strong> Requirement definition, curated
+                  candidate shortlists, and allocation approvals.
                 </li>
               </ul>
             </div>
 
-            <div className="card">
-              <h3>AI-Powered Resume Parsing</h3>
+            <div className="approach-card">
+              <h3>AI Matching Core</h3>
               <p>
-                The AI module extracts and analyzes skills, education, and
-                experience to match candidates with the best-fitting internships
-                using a compatibility scoring algorithm.
+                Resume parsing, skill extraction, and fairness-aware scoring
+                blend to generate ranked internship recommendations per
+                candidate.
               </p>
             </div>
 
-            <div className="card">
-              <h3>Web3-Integrated Backend</h3>
+            <div className="approach-card">
+              <h3>Web3 Governance Layer</h3>
               <p>
-                AI logic is deployed on the <strong>Internet Computer (ICP)</strong>,
-                ensuring transparent and tamper-proof execution through DAO-based
-                governance.
+                Internet Computer canisters, steered by a DAO, guarantee
+                transparent model updates and tamper-proof execution logic.
               </p>
             </div>
 
-            <div className="card">
-              <h3>Secure Resume Verification</h3>
+            <div className="approach-card">
+              <h3>Verified Credentials</h3>
               <p>
-                Each uploaded resume is hashed and stored on decentralized storage
-                (IPFS/Blockchain), ensuring authenticity and immutability.
+                Every resume is hashed to IPFS, enabling integrity checks and
+                dispute-free audit trails for participating ministries.
               </p>
             </div>
 
-            <div className="card">
-              <h3>End-to-End Transparency</h3>
+            <div className="approach-card">
+              <h3>Insightful Telemetry</h3>
               <p>
-                Students and employers interact with a trustless, verifiable
-                system — enabling unbiased internship allocations and complete
-                transparency.
+                Allocation heatmaps spotlight representation, satisfaction, and
+                bottlenecks so policy teams can iterate rapidly.
               </p>
             </div>
           </div>
         </motion.section>
 
-        
         <motion.section
-          className="approach-section tech-section"
+          className="surface-card approach-section tech-section"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.6 }}
         >
-          <h2>🧩 Core Technologies Used</h2>
+          <h2>Technology Stack</h2>
 
           <table className="tech-table">
             <thead>
@@ -120,32 +113,32 @@ function OurApproach() {
             </thead>
             <tbody>
               <tr>
-                <td>Frontend</td>
-                <td>React.js (Student & Employer Dashboards)</td>
+                <td>Frontend Experiments</td>
+                <td>React + Framer Motion (Vite)</td>
               </tr>
               <tr>
-                <td>Backend</td>
-                <td>Node.js + Express</td>
+                <td>APIs & Orchestration</td>
+                <td>Node.js, Express, GraphQL Gateway</td>
               </tr>
               <tr>
-                <td>Database</td>
-                <td>MongoDB</td>
+                <td>Operational Data</td>
+                <td>MongoDB + Redis Streams</td>
               </tr>
               <tr>
                 <td>AI/ML Engine</td>
-                <td>Python (Resume Parser + Matching Model)</td>
+                <td>Python, Transformers, Fairness Metrics</td>
               </tr>
               <tr>
                 <td>Decentralized Hosting</td>
                 <td>Internet Computer (Canisters)</td>
               </tr>
               <tr>
-                <td>Blockchain Storage</td>
-                <td>IPFS / ICP Storage for Resumes</td>
+                <td>Immutable Storage</td>
+                <td>IPFS / ICP for resume hashes</td>
               </tr>
               <tr>
                 <td>Governance</td>
-                <td>DAO-based Model Update Mechanism</td>
+                <td>DAO-based model lifecycle management</td>
               </tr>
             </tbody>
           </table>
