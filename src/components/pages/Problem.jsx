@@ -5,90 +5,89 @@ import "./Problem.css";
 
 function Problem() {
   return (
-    <div className="problem-page">
-      {/* Banner Section */}
-      <motion.div
-        className="problem-banner"
+    <div className="problem-page page-shell">
+      <motion.section
+        className="page-banner problem-banner"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         <h1>AI-Based Smart Allocation Engine for PM Internship Scheme</h1>
-        <p className="problem-id">Problem Statement ID: <strong>25033</strong></p>
-      </motion.div>
+        <p>
+          Precision matchmaking between thousands of students and internship opportunities, with fairness and
+          transparency embedded in the workflow.
+        </p>
+        <span className="problem-id">Problem Statement ID · 25033</span>
+      </motion.section>
 
-      {/* Main Content */}
-      <div className="problem-content">
-        {/* Left: Description */}
+      <div className="problem-content page-grid two-column">
         <div className="problem-details">
           <motion.section
-            className="problem-section"
+            className="surface-card problem-section"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
             <h2>Background</h2>
             <p>
-              The PM Internship Scheme enables students to gain industry exposure through structured internships. 
-              However, matching thousands of applicants with the most suitable opportunities remains a challenge, 
-              often leading to suboptimal selections and delays.
+              The PM Internship Scheme unlocks structured exposure for students across India. The scale of participation
+              makes manual matching impractical, leading to bottlenecks, delayed confirmations, and mismatched placements.
             </p>
           </motion.section>
 
           <motion.section
-            className="problem-section"
+            className="surface-card problem-section"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.6 }}
+            transition={{ delay: 0.45, duration: 0.6 }}
           >
             <h2>Description</h2>
             <p>
-              The problem envisages a smart, automated system that uses AI/ML algorithms to match candidates 
-              with internship opportunities based on skills, qualifications, location preferences, and sector interests. 
-              The system should also account for affirmative action (e.g., representation from rural/aspirational districts, 
-              different social categories), past participation, and internship capacity of industries.
+              The solution envisions an intelligent allocation engine that scores candidates on verified skills, location
+              preferences, inclusive representation, and historical participation. Internships are ranked against these
+              profiles, ensuring every recommendation can be audited and explained.
             </p>
           </motion.section>
 
           <motion.section
-            className="problem-section"
+            className="surface-card problem-section"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.6 }}
+            transition={{ delay: 0.6, duration: 0.6 }}
           >
             <h2>Expected Solution</h2>
             <ul>
-              <li>AI-based matchmaking engine for internship placement</li>
-              <li>A prototype of the front end demonstrating how this engine will work</li>
+              <li>AI-powered matchmaking engine with transparent scoring metrics.</li>
+              <li>Production-ready frontend prototype surfacing student & employer journeys.</li>
+              <li>Dashboards that track fairness KPIs and allocation progress in real time.</li>
             </ul>
           </motion.section>
         </div>
 
-        {/* Right: Meta Info */}
-        <motion.div
-          className="problem-meta"
+        <motion.aside
+          className="surface-card problem-meta"
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.9, duration: 0.6 }}
+          transition={{ delay: 0.7, duration: 0.6 }}
         >
-          <h3>Details</h3>
+          <h3>Opportunity Snapshot</h3>
           <div className="meta-item">
-            <span>Organization:</span>
+            <span>Organization</span>
             <p>Ministry of Corporate Affairs</p>
           </div>
           <div className="meta-item">
-            <span>Department:</span>
+            <span>Department</span>
             <p>Ministry of Corporate Affairs (MoCA)</p>
           </div>
           <div className="meta-item">
-            <span>Category:</span>
-            <p>Software</p>
+            <span>Category</span>
+            <p>Software & Intelligent Systems</p>
           </div>
           <div className="meta-item">
-            <span>Theme:</span>
-            <p>Smart Automation</p>
+            <span>Theme</span>
+            <p>Smart Automation & Fair Allocation</p>
           </div>
-        </motion.div>
+        </motion.aside>
       </div>
     </div>
   );

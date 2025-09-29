@@ -10,49 +10,54 @@ function Footer() {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <div className="footer-content">
-        {/* Contact Info */}
-        <div className="contact-info">
-          <h3>📩 Contact Us</h3>
+      <div className="footer-grid">
+        <div className="footer-column">
+          <span className="footer-eyebrow">Leviathan</span>
+          <h3>AI-powered, Web3-secured internship allocation.</h3>
           <p>
-            <strong>Team Leader:</strong> Swayam Chaurasiya
-          </p>
-          <p>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:2300520100167@ietlucknow.ac.in" className="email-link">
-              2300520100167@ietlucknow.ac.in
-            </a>
+            Designed for the PM Internship Scheme to deliver equitable matches,
+            measurable impact, and credible audit trails.
           </p>
         </div>
 
-        {/* Optional Links */}
-        <div className="social-links">
-          <a
-            href="https://github.com/your-github"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/your-linkedin"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="mailto:prakhar.shukla@email.com"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
+        <div className="footer-column footer-contact">
+          <span className="footer-heading">Mission Contacts</span>
+          <ul>
+            <li>
+              <span>Team Lead</span>
+              <strong>Swayam Chaurasiya</strong>
+            </li>
+            <li>
+              <span>Email</span>
+              <a href="mailto:2300520100167@ietlucknow.ac.in">
+                2300520100167@ietlucknow.ac.in
+              </a>
+            </li>
+            <li>
+              <span>Base</span>
+              <strong>IET Lucknow, Uttar Pradesh</strong>
+            </li>
+          </ul>
+        </div>
+
+        <div className="footer-column footer-links">
+          <span className="footer-heading">Stay in orbit</span>
+          <p>
+            Follow repository updates, behind-the-scenes research, and demo
+            drops as we refine the Leviathan platform.
+          </p>
+          <div className="footer-pills">
+            <span className="footer-pill">GitHub · Launching soon</span>
+            <span className="footer-pill">LinkedIn · In progress</span>
+            <a className="footer-pill" href="mailto:prakhar.shukla@email.com">
+              Email dev team
+            </a>
+          </div>
         </div>
       </div>
 
       <div className="footer-bottom">
-        <p>© {new Date().getFullYear()} Leviathan. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Leviathan. Crafted for Smart India Hackathon.</p>
       </div>
     </motion.footer>
   );
