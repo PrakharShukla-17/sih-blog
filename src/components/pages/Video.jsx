@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Video.css";
-import tempVideo from "../../assets/DVD Logo Hits Corner.mp4"; // Replace this later with your actual video
+import tempVideo from "../../assets/PROBLEM STATEMENT_- 25033 AI-Based Smart Allocation Engine for PM internship Scheme _ TEAM LEVIATHAN.mp4"; 
 
 function Video() {
   return (
