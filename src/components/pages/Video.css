@@ -50,12 +50,14 @@
   line-height: 1.8;
 }
 
+
 .video-frame {
   position: relative;
   border-radius: var(--radius-lg);
   border: 1px solid rgba(148, 163, 184, 0.25);
   overflow: hidden;
   box-shadow: 0 32px 80px rgba(15, 23, 42, 0.55);
+  background: #000;
 }
 
 .video-frame::after {
@@ -70,21 +72,23 @@
   pointer-events: none;
 }
 
+/* Responsive iframe */
 .demo-video {
   width: 100%;
-  display: block;
+  height: 100%;
   aspect-ratio: 16 / 9;
   border: none;
-  outline: none;
+  display: block;
   background: #000;
 }
 
-.demo-video::-webkit-media-controls-panel {
-  background: rgba(15, 23, 42, 0.8);
-}
-
+/* Fix for mobile responsiveness */
 @media (max-width: 768px) {
   .video-container {
     padding: 1.2rem;
+  }
+
+  .video-frame {
+    border-radius: 10px;
   }
 }
